@@ -21,12 +21,12 @@ describe("FightMe Preset", () => {
       cwd: `${__dirname}/tmp`,
     });
 
-    execSync('git config user.name "fightme"', {
-      cwd: `${__dirname}/tmp/git-templates`,
-    });
-    execSync('git config user.email "fightme@circleci.com"', {
-      cwd: `${__dirname}/tmp/git-templates`,
-    });
+    // execSync('git config user.name "fightme"', {
+    //   cwd: `${__dirname}/tmp/git-templates`,
+    // });
+    // execSync('git config user.email "fightme@circleci.com"', {
+    //   cwd: `${__dirname}/tmp/git-templates`,
+    // });
   });
 
   afterAll(() => {
@@ -56,11 +56,6 @@ describe("FightMe Preset", () => {
     dummyCommit("docs(api): updated API");
     dummyCommit("chore(deps): updated deps");
     dummyCommit("test(api): added api ones");
-
-    const stdout = execSync("git log", {
-      cwd: `${__dirname}/tmp/git-templates`,
-    });
-    console.log(stdout.toString());
 
     conventionalChangelogCore(
       {
