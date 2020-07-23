@@ -57,6 +57,11 @@ describe("FightMe Preset", () => {
     dummyCommit("chore(deps): updated deps");
     dummyCommit("test(api): added api ones");
 
+    const stdout = execSync("git log", {
+      cwd: `${__dirname}/tmp/git-templates`,
+    });
+    console.log(stdout);
+
     conventionalChangelogCore(
       {
         config: fightmePreset,
