@@ -90,10 +90,10 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/cc-fm-preset
-      - run: *update-pkg-version
       - run: *authenticate-github-registry
       - deploy: *publish-to-github
       - run: *authenticate-npm-registry
+      - run: *update-pkg-version
       - deploy: *publish-to-npm
 
 workflows:
