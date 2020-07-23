@@ -22,10 +22,10 @@ describe("FightMe Preset", () => {
     });
 
     execSync('git config user.name "fightme"', {
-      cwd: `${__dirname}/tmp`,
+      cwd: `${__dirname}/tmp/git-templates`,
     });
     execSync('git config user.email "fightme@circleci.com"', {
-      cwd: `${__dirname}/tmp`,
+      cwd: `${__dirname}/tmp/git-templates`,
     });
   });
 
