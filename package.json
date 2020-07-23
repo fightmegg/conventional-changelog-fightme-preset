@@ -1,0 +1,39 @@
+{
+  "name": "@fightmegg/conventional-changelog-fightme-preset",
+  "version": "0.0.0",
+  "description": "conventional-changelog fightme preset",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fightmegg/conventional-changelog-fightme-preset.git"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "fightme",
+    "preset"
+  ],
+  "files": [
+    "src"
+  ],
+  "author": "Ollie Jennings",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/fightmegg/conventional-changelog-fightme-preset/issues"
+  },
+  "homepage": "https://github.com/fightmegg/conventional-changelog-fightme-preset#readme",
+  "dependencies": {
+    "compare-func": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.5",
+    "conventional-changelog-core": "^4.1.7",
+    "jest": "^26.1.0",
+    "through2": "^4.0.2"
+  }
+}
