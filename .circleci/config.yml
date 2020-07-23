@@ -27,6 +27,8 @@ aliases:
   - &update-pkg-version
     name: Updating Package Version
     command: |
+      echo "git-tag-version=false" > ~/cc-fm-preset/.npmrc
+      echo "allow-same-version=true" >> ~/cc-fm-preset/.npmrc
       npm version $CIRCLE_TAG
   - &publish-to-github
     name: Publish to Github Package Registry
