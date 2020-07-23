@@ -20,6 +20,13 @@ describe("FightMe Preset", () => {
     execSync(`git init --template=./git-templates`, {
       cwd: `${__dirname}/tmp`,
     });
+
+    execSync('git config user.name "fightme"', {
+      cwd: `${__dirname}/tmp`,
+    });
+    execSync('git config user.email "fightme@circleci.com"', {
+      cwd: `${__dirname}/tmp`,
+    });
   });
 
   afterAll(() => {
