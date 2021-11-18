@@ -32,7 +32,7 @@
     "compare-func": "^2.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.10",
+    "@types/jest": "^27.0.3",
     "conventional-changelog-core": "^4.2.0",
     "jest": "^26.4.2",
     "jest-junit": "^12.0.0",
